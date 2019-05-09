@@ -21,7 +21,7 @@ if __name__ == "__main__":
         create_suite('block_header',      'minimal', lambda: generate_from_tests(test_process_block_header)),
         create_suite('block_header',      'mainnet', lambda: generate_from_tests(test_process_block_header)),
         create_suite('deposit',          'minimal', lambda: generate_from_tests(test_process_deposit)),
-        create_suite('deposits',          'mainnet', lambda: generate_from_tests(test_process_deposit)),
+        create_suite('deposit',          'mainnet', lambda: generate_from_tests(test_process_deposit)),
         create_suite('proposer_slashing', 'minimal', lambda: generate_from_tests(test_process_proposer_slashing)),
         create_suite('proposer_slashing', 'mainnet', lambda: generate_from_tests(test_process_proposer_slashing)),
         create_suite('transfer',          'minimal', lambda: generate_from_tests(test_process_transfer)),
